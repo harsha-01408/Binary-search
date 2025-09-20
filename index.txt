@@ -1,0 +1,25 @@
+FCDC - Factorial Modulo
+#number-theory
+
+You are given two integers a, b. Find the number of integers i (i ≥ 1) for which i! is divisible by a but not divisible by b. If i! is divisible by both a and b, then you should not count that i.
+
+Input
+One line containing two integers a and b.
+
+Output
+Output a single line with the result.
+
+Constraints
+1 ≤ a ≤ b ≤ 10^7
+
+Example
+Input:
+2 3
+
+Output:
+1
+
+Explanation
+2! is the only factorial which is divisible by 2 and not divisible by 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
