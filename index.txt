@@ -23,3 +23,38 @@ Explanation
 2! is the only factorial which is divisible by 2 and not divisible by 3.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Problem: Determine Maximum Total Data Flow
+
+You are given an array bandwidth of length n, where bandwidth[i] represents the bandwidth of the i-th processing node.
+
+You also have an integer streamCount, which represents the exact number of data channels that must be opened.
+
+Each data channel connects two (not necessarily distinct) nodes:
+- One node is considered the main node.
+- The other node is considered the secondary node.
+
+Thus, each channel corresponds to an ordered pair of indices (i, j), where:
+- 0 ≤ i, j < n
+
+The data flow of a single channel (i, j) is defined as:
+    bandwidth[i] + bandwidth[j]
+
+Constraints:
+- You may use each ordered pair (i, j) at most once.
+- (i, j) and (j, i) are considered different pairs, and both may be used if desired.
+- Pairs where i = j are also allowed.
+
+Your task:
+Choose exactly streamCount distinct ordered pairs (i, j) so that the sum of their data flows
+    Σ (bandwidth[i] + bandwidth[j])
+is as large as possible.
+
+Return this maximum possible total data flow as a long integer.
+
+Function signature (C++):
+    long determineMaxDataFlow(vector<int> bandwidth, long streamCount);
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
