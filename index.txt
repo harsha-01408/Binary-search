@@ -58,3 +58,73 @@ Function signature (C++):
 
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Q. Maximum Pipeline Throughput
+
+A data processing pipeline consists of n services connected in series.
+The output of service i becomes the input of service i+1.
+
+Each service i has an initial throughput (messages per minute):
+    throughput[i]
+
+Each service can be scaled independently. Scaling up service i one time costs:
+    scalingCost[i]
+
+If a service is scaled up x times, its new throughput becomes:
+    throughput[i] * (1 + x)
+
+Since all services are in a chain, the effective throughput of the entire
+pipeline is the minimum throughput among all services:
+    pipelineThroughput = min( newThroughput[0], ..., newThroughput[n-1] )
+
+You are given:
+    throughput[] : size n, base throughput of each service
+    scalingCost[]: size n, cost to scale each service once
+    budget       : total money available
+
+Task:
+Choose how many times to scale each service (x0, x1, ..., x_{n-1},
+each an integer >= 0) so that the total cost
+
+    sum( x_i * scalingCost[i] ) <= budget
+
+and the resulting pipeline throughput (minimum of all new throughputs)
+is maximized.
+
+Return that maximum achievable pipeline throughput as a long integer.
+
+Constraints:
+    1 <= n <= 100000
+    1 <= throughput[i] <= 1e7
+    1 <= scalingCost[i] <= 200
+    1 <= budget <= 1e9
+    Maximum throughput achievable <= 1e9
+
+Examples:
+
+1) 
+n = 3
+throughput = [3, 2, 5]
+scalingCost = [2, 5, 10]
+budget = 28
+Output: 6
+
+2)
+throughput = [4, 2, 7]
+scalingCost = [3, 5, 6]
+budget = 32
+
+One optimal allocation:
+- Scale service 0 by 2 -> new throughput = 4 * 3 = 12, cost = 6
+- Scale service 1 by 4 -> new throughput = 2 * 5 = 10, cost = 20
+- Scale service 2 by 1 -> new throughput = 7 * 2 = 14, cost = 6
+Total cost = 6 + 20 + 6 = 32 (within budget)
+Pipeline throughput = min(12, 10, 14) = 10
+
+Output: 10
+
+Function to implement:
+    long getMaximumThroughput(int throughput[], int scalingCost[], int budget)
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
