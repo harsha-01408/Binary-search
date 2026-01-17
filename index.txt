@@ -150,3 +150,29 @@ Write a function:
 that returns the parent of processNumber.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+A teacher assigns random positive integers to n students, represented in an
+array arr, to pair students for a project. Two students can be paired if the
+product of the numbers assigned to them is NOT a perfect square. Each student
+can be part of at most one pair.
+
+You are allowed to change the numbers assigned to at most k students. Each
+changed number can be replaced with any positive integer.
+
+Find the maximum number of valid pairs that can be formed after making at most
+k changes.
+
+Example:
+arr = [4, 12, 20, 5, 20, 5, 45]
+k = 1
+
+In this example, n = 7.
+
+• 4 and 5 can be paired since their product 20 is not a perfect square.
+• 12 and 20 can be paired since their product 240 is not a perfect square.
+• By changing one value (for example, changing 20 to 11), 11 and 5 can be paired
+  since their product 55 is not a perfect square.
+
+Thus, the maximum number of valid pairs that can be formed is 3.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
