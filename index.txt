@@ -176,3 +176,18 @@ In this example, n = 7.
 Thus, the maximum number of valid pairs that can be formed is 3.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem Statement
+
+Amazon wants to distribute parcels among its delivery agents as evenly as possible.
+There are n delivery agents, and each agent i initially has parcels[i] parcels.
+In addition, there are extra_parcels parcels that must be assigned to the agents.
+
+Distribute the extra parcels among the agents so that the maximum number of parcels
+assigned to any single agent is as small as possible.
+
+Given the integer array parcels and the integer extra_parcels, determine the minimum
+possible value of the maximum number of parcels any agent will have after the
+distribution.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
