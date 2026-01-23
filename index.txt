@@ -191,3 +191,30 @@ possible value of the maximum number of parcels any agent will have after the
 distribution.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Question: Maximizing Tool Usage Value
+
+You are given an array remainingUses, where each element represents how
+many times a particular developer tool can still be used.
+
+You also have an integer m, representing the number of developers.
+Each developer can use exactly one tool, and each tool use works as follows:
+- When a tool is used, it gives value equal to its current remaining uses
+- After being used, that tool’s remaining uses decrease by 1
+
+Your task is to assign exactly m tool uses (one per developer) in such a way
+that the total value gained is maximized.
+
+You may choose the same tool multiple times, as long as it still has
+remaining uses left.
+
+Return the maximum total value that can be obtained after m uses.
+
+Goal:
+- Always choose tool usages optimally so that higher remaining-use tools
+  contribute more value.
+
+Function to implement:
+maximizeToolValue(remainingUses, m)
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
