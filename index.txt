@@ -218,3 +218,38 @@ Function to implement:
 maximizeToolValue(remainingUses, m)
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Problem 
+
+You are given n developers and n projects.
+
+Input data:
+- time[i]: the time required by developer i to write one program
+- programs[j]: the number of programs in project j
+
+Assignment rules:
+- Each developer must be assigned to exactly one project.
+- Each project must be assigned to exactly one developer.
+- If developer i is assigned project j, the time to complete that project is:
+  
+    programs[j] × time[i]
+
+Overall completion time:
+- All projects run in parallel.
+- The total finishing time is the maximum completion time among all assigned developer–project pairs.
+
+Special operation: Workshops
+- You may run at most k workshops before assigning projects.
+- Each workshop can be applied to any one developer.
+- Each workshop reduces that developer’s time[i] by exactly 1.
+- Workshops can be distributed arbitrarily among developers.
+
+Goal:
+- Distribute up to k workshops across developers.
+- Assign developers to projects optimally.
+- Minimize the overall completion time (i.e., the maximum value of programs[j] × time[i] after workshops and assignment).
+
+In short:
+Use up to k reductions on developer speeds and match developers to projects so that the slowest project finishes as early as possible.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
