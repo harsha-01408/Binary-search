@@ -253,3 +253,18 @@ In short:
 Use up to k reductions on developer speeds and match developers to projects so that the slowest project finishes as early as possible.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You have a tank with capacity C litres. N people come in a line, and each person wants to trade exactly 1 litre:
+
+- If A[i] = 1, they want to add 1 litre to the tank. This succeeds only if the tank is not full.
+  If the tank is already at level C, the action fails and counts as a disturbance.
+
+- If A[i] = -1, they want to remove 1 litre from the tank. This succeeds only if the tank is not empty.
+  If the tank is already at level 0, the action fails and counts as a disturbance.
+
+Before the line starts, you can choose the initial tank level X where 0 <= X <= C.
+
+Task: Choose X to minimize the total number of disturbances.
+If multiple X give the same minimum disturbances, output the smallest such X.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
