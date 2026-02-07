@@ -285,3 +285,17 @@ Output:
 - The maximum possible value of D
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+There are n tasks, and each task needs a certain amount of work to be completed.
+
+Work is done in rounds. In every round, you pick one task to get extra attention.
+That chosen task makes x units of progress, while all other unfinished tasks make
+only y units of progress (with y smaller than x).
+
+Tasks are removed as soon as their required work is done.
+
+You can choose a different task to prioritize in each round.
+
+Find the smallest number of rounds needed to finish all tasks.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
