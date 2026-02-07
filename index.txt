@@ -268,3 +268,20 @@ Task: Choose X to minimize the total number of disturbances.
 If multiple X give the same minimum disturbances, output the smallest such X.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given n segments on a number line. For each segment [a_i, b_i], choose one
+point p_i such that a_i ≤ p_i ≤ b_i.
+
+After choosing one point from every segment, consider the distances between all
+pairs of chosen points. Let D be the smallest of these distances.
+
+Your task is to choose the points so that D is as large as possible.
+
+Input:
+- n: the number of segments
+- intervals: an array of n pairs [a_i, b_i], where 0 ≤ a_i ≤ b_i ≤ 10^14
+
+Output:
+- The maximum possible value of D
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
