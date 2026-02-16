@@ -299,3 +299,17 @@ You can choose a different task to prioritize in each round.
 Find the smallest number of rounds needed to finish all tasks.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Path Problem
+
+Given an n x m grid, where rows are numbered from 1 to n and columns from 1 to m, there are x blocked cells. Their positions are specified by the array blockedPositions[i] where blockedPositions[i][1] represents the row and blockedPositions[i][2] represents the column position, using 1-based indexing.
+
+Starting from the top-left cell (1, 1), the goal is to reach the bottom-right cell (n, m) without visiting any blocked cells. Movement is allowed only upward, downward, left, or right.
+
+The strength of a path is defined as the minimum Manhattan distance from each cell in the path to the nearest blocked cell. To calculate the strength of a specific path, an array minDist[] is created, where minDist[i] represents the minimum distance to any blocked cell for the i-th cell visited. The strength of the path is given by min(minDist[]).
+
+Among all possible paths from (1, 1) to (n, m), determine the path that maximizes strength. If multiple paths have the same maximum strength, select the one that visits the fewest cells.
+
+Return two integers: the maximum strength achievable and the minimum number of cells visited. If it is impossible to navigate from (1, 1) to (n, m), return [-1, -1].
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
