@@ -342,3 +342,43 @@ Constraints:
 - 0 <= stations[i] <= 10^9
 - stations[i] are distinct
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given an integer array prices of length n, where prices[i] is the price of the product sold at the i-th shop. The array is sorted in non-decreasing order.
+
+You are also given q queries. For each query, two values are provided:
+
+- pos: the starting shop index (1-indexed)
+- amount: the total money available
+
+For a query, Alex starts at shop pos and may move only to the right, visiting shops pos through n. From each visited shop, he may buy at most one product.
+
+For every query, determine the maximum number of products Alex can buy without spending more than amount.
+
+Return an array answer where answer[i] is the result for the i-th query.
+
+Example 1:
+Input:
+prices = [3, 4, 5, 5, 7]
+pos = [2, 1, 5]
+amount = [10, 24, 5]
+
+Output:
+[2, 5, 0]
+
+Explanation:
+- Query 1: Start from index 2, available prices are [4, 5, 5, 7].
+  Alex can buy 4 and 5 for a total of 9, so the answer is 2.
+- Query 2: Start from index 1, available prices are [3, 4, 5, 5, 7].
+  Total cost of all products is 24, so the answer is 5.
+- Query 3: Start from index 5, available price is [7].
+  Since 7 > 5, Alex cannot buy anything, so the answer is 0.
+
+Constraints:
+- 1 <= n <= 5 * 10^5
+- 1 <= q <= 2 * 10^5
+- 1 <= prices[i] <= 10^6
+- prices is sorted in non-decreasing order
+- 1 <= pos[i] <= n
+- 0 <= amount[i] <= 10^12
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
