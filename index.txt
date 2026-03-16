@@ -313,3 +313,32 @@ Among all possible paths from (1, 1) to (n, m), determine the path that maximize
 Return two integers: the maximum strength achievable and the minimum number of cells visited. If it is impossible to navigate from (1, 1) to (n, m), return [-1, -1].
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given an array stations where stations[i] represents the position of the i-th relay station on a number line. All station positions are distinct integers.
+
+The signal quality between two consecutive stations depends on the distance between them. A larger distance means a weaker connection. The network's weakness is defined as the maximum distance between any two consecutive stations.
+
+You are allowed to add exactly k new repeaters at integer positions on the same number line. Each repeater becomes a new station, so it also affects the distances between consecutive stations.
+
+Return the minimum possible value of the maximum distance between any two consecutive stations after adding the k repeaters optimally.
+
+Example 1:
+Input: stations = [1, 10], k = 2
+Output: 3
+Explanation:
+Place the 2 repeaters at positions 4 and 7.
+The consecutive distances become [3, 3, 3], so the maximum distance is 3.
+
+Example 2:
+Input: stations = [1, 6, 12], k = 2
+Output: 3
+Explanation:
+One optimal placement is at positions 3 and 9.
+The consecutive distances become [2, 3, 3, 3], so the maximum distance is 3.
+
+Constraints:
+- 2 <= stations.length <= 10^5
+- 0 <= k <= 10^9
+- 0 <= stations[i] <= 10^9
+- stations[i] are distinct
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
