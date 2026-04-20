@@ -460,3 +460,47 @@ Constraints:
 - 1 <= k <= (n + 1) / 2
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given four integers width, maxJump, maxEnergy, and numTowers.
+
+There are numTowers relay towers placed strictly between positions 0 and width.
+The i-th tower is at position x[i] and has height height[i].
+
+You want to send data from position 0 to position width.
+
+A tower can be used only if its height is at least H, where H is the storm height.
+The start position 0 and the end position width are always usable.
+
+From one usable position, you may jump to another usable position only if the distance between them is at most maxJump.
+
+The energy cost of a jump from position a to position b is (a - b)^2.
+The total energy used by all jumps must not exceed maxEnergy.
+
+Return the maximum storm height H such that it is still possible to travel from 0 to width.
+
+If it is impossible even when H = 0, return -1.
+If it is possible for every storm height, return 10^9.
+
+Example 1:
+Input:
+width = 10
+x = [2, 4, 7]
+height = [3, 5, 2]
+maxJump = 4
+maxEnergy = 30
+Output:
+3
+Explanation:
+When H = 3, the usable towers are at positions 2 and 4.
+A valid route is 0 -> 2 -> 4 -> 10 if each jump is within maxJump and the total squared jump cost is within maxEnergy.
+For H = 4, fewer towers remain usable, and it is no longer possible within the energy limit.
+
+Constraints:
+- 1 <= width, maxJump <= 10^9
+- 1 <= maxEnergy <= 10^18
+- 1 <= numTowers <= 10^5
+- 0 < x[i] < width
+- 0 <= height[i] <= 10^9
+- x is sorted in strictly increasing order
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
