@@ -424,3 +424,39 @@ Constraints:
 - 1 <= t1, t2 <= 10^9
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+You are given an integer array vulnerability, where vulnerability[i] represents the vulnerability value of the i-th server, and an integer k.
+
+You must choose exactly k servers such that no two chosen servers are adjacent in the array.
+
+The vulnerability of a chosen set is defined as the maximum vulnerability value among all chosen servers.
+
+Return the minimum possible vulnerability of any valid set of exactly k non-adjacent servers.
+
+Example 1:
+Input: vulnerability = [2,3,5,9], k = 2
+Output: 5
+Explanation:
+Possible valid choices of 2 non-adjacent servers are:
+- [2,5] -> max = 5
+- [2,9] -> max = 9
+- [3,9] -> max = 9
+So the minimum possible maximum is 5.
+
+Example 2:
+Input: vulnerability = [2,4,6,8,10], k = 2
+Output: 6
+Explanation:
+Possible valid choices include:
+- [2,6] -> max = 6
+- [2,8] -> max = 8
+- [4,8] -> max = 8
+- [6,10] -> max = 10
+The minimum possible maximum vulnerability is 6.
+
+Constraints:
+- 1 <= vulnerability.length <= 10^5
+- 1 <= vulnerability[i] <= 10^9
+- 1 <= k <= (n + 1) / 2
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
